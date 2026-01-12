@@ -12,13 +12,9 @@ Trieda pre 2D vektory používaná pri pohybe lopty a pálek.
 - `dot(other)` – skalárny súčin, používaný pri výpočte odrazov:
 V_new = V - 2 * (V · N) * N
 
-markdown
-Kopírovať kód
 - `magnitude()` – veľkosť vektora:
 |V| = sqrt(x^2 + y^2)
 
-markdown
-Kopírovať kód
 - `normalize()` – jednotkový vektor `(x/|V|, y/|V|)`
 - `set_magnitude(new_mag)` – zmena veľkosti vektora pri zachovaní smeru
 - `reflect(normal)` – odraz vektora od povrchu (normála N)
@@ -59,13 +55,9 @@ Kopírovať kód
 v_x = cos(theta) * base_speed
 v_y = sin(theta) * base_speed
 
-markdown
-Kopírovať kód
 - `update(dt, speed_multiplier)` – pohyb lopty
 position += velocity * dt * speed_multiplier
 
-markdown
-Kopírovať kód
 - `reflect_from_paddle(paddle)` – odraz lopty podľa miesta zásahu pálky
 - Offset od stredu pálky normalizovaný do [-1, 1]
 - Bounce angle: `bounce_angle = normalized_offset * MAX_BOUNCE_ANGLE`
@@ -102,8 +94,6 @@ Používa sa pre rýchlosti lopty/pálky, celkovú rýchlosť hry.
 - Lineárna interpolácia:
 handle_x = x0 + (value - min) / (max - min) * width
 
-markdown
-Kopírovať kód
 - Hodnotu je možné meniť ťahaním myšou.
 
 ---
